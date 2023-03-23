@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground">
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:gravity = "center"
+        android:orientation = "vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RegisterText"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:background="#30ffffff"
+        android:hint="Username"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:layout_below="@id/RegisterText"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:background="#30ffffff"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:layout_below="@id/username"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullname"
+        android:background="#30ffffff"
+        android:hint="Fullname"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:layout_below="@id/password"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Email"
+        android:background="#30ffffff"
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:layout_below="@id/fullname"
+        />
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Email"
+        android:layout_margin="5dp"
+        android:background="#30ffffff"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/DOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Phone"
+        android:layout_margin="5dp"
+        android:background="#30ffffff"
+        android:hint="Date of birth"
+        android:inputType="date"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/registerBtn"
+    android:layout_centerHorizontal="true"
+    android:text="Register"
+    android:layout_below="@+id/DOB"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/registerBtn"
+    android:id="@+id/ExistedAccount"
+    android:text="Already have an account?"
+    android:textColor="#5A5A5A"
+    android:layout_centerHorizontal="true"
+    />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

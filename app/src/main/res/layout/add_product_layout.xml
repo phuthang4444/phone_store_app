@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    android:paddingLeft="21dp"
+    android:paddingRight="21dp"
+    android:paddingBottom="11dp"
+    android:gravity = "center"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/addProductlb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Add Product"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:padding="11dp"
+        android:id="@+id/productID"
+        android:hint="Product Id"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productName"
+        android:background="@color/gray"
+        android:padding="11dp"
+        android:layout_marginTop="10dp"
+        android:hint="Product Name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productPrice"
+        android:background="@color/gray"
+        android:padding="11dp"
+        android:layout_marginTop="10dp"
+        android:hint="Product Price"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productQuantity"
+        android:background="@color/gray"
+        android:padding="11dp"
+        android:layout_marginTop="10dp"
+        android:hint="Product Quantity"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productMaker"
+        android:textColor="@color/white"
+        android:background="@color/gray"
+        android:padding="11dp"
+        android:layout_marginTop="10dp"
+        android:hint="Product Maker"
+        android:textColorHint="@color/white"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/AddProductBtn"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/design_default_color_secondary"
+        android:layout_gravity="end"/>
+</LinearLayout>
